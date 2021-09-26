@@ -1,7 +1,7 @@
 import express from 'express';
 import sequelize from './utils/database.js';
 import router from './routes/routes.js';
-const port = 5000
+const port = 3000
 
 const app = express();
 
@@ -28,4 +28,4 @@ app.use(router);
 
 sequelize.sync(); 
 
-app.listen(5000);
+app.listen(3000);
